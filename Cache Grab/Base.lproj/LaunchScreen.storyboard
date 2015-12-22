@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Iva-eG-RTZ">
-                                <rect key="frame" x="-14" y="0.0" width="462" height="743"/>
+                                <rect key="frame" x="-14" y="0.0" width="354" height="569"/>
                             </imageView>
                         </subviews>
                         <animations/>

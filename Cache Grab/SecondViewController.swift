@@ -78,7 +78,7 @@ extension SecondViewController: MKMapViewDelegate {
         case 600..<700:
             userImage = "usericon1"
         default:
-            userImage = "usericon4"
+            userImage = "usericon3"
         }
         
     }
