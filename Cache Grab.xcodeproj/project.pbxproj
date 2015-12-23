@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9B485331C29E9E9004D4874 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B485321C29E9E9004D4874 /* FourthViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A9D680B91C0330BB00B5CEFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D680B81C0330BB00B5CEFA /* AppDelegate.swift */; };
 		A9D680BB1C0330BB00B5CEFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D680BA1C0330BB00B5CEFA /* ViewController.swift */; };
 		A9D680BE1C0330BB00B5CEFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D680BC1C0330BB00B5CEFA /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		27E5029E1C16005F009061AD /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		A9B485321C29E9E9004D4874 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		A9D680B51C0330BB00B5CEFA /* Cache Grab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cache Grab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D680B81C0330BB00B5CEFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D680BA1C0330BB00B5CEFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				A9D680BA1C0330BB00B5CEFA /* ViewController.swift */,
 				A9D680CC1C03356100B5CEFA /* SecondViewController.swift */,
 				A9D680CE1C0340F400B5CEFA /* ThirdViewController.swift */,
+				A9B485321C29E9E9004D4874 /* FourthViewController.swift */,
 				A9D680BC1C0330BB00B5CEFA /* Main.storyboard */,
 				A9D680BF1C0330BB00B5CEFA /* Assets.xcassets */,
 				A9D680C11C0330BB00B5CEFA /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 				A9D680BB1C0330BB00B5CEFA /* ViewController.swift in Sources */,
 				A9D680CF1C0340F400B5CEFA /* ThirdViewController.swift in Sources */,
 				A9D680B91C0330BB00B5CEFA /* AppDelegate.swift in Sources */,
+				A9B485331C29E9E9004D4874 /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -87,20 +87,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="575"/>
                                 <animations/>
                             </mapView>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Hint: it's by a tourist attraction." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-72-oIg">
-                                <rect key="frame" x="80" y="509" width="161" height="48"/>
-                                <color key="backgroundColor" red="0.13333333333333333" green="0.63137254901960782" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" text="Navigate closer to the geocache. The hand icon will change colour depending on how close you are to the cache." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKQ-nJ-jga">
-                                <rect key="frame" x="21" y="447" width="279" height="59"/>
-                                <color key="backgroundColor" red="0.13596229433765125" green="0.63251657196969702" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Help" translatesAutoresizingMaskIntoConstraints="NO" id="I3n-9J-ZNz">
+                                <rect key="frame" x="261" y="506" width="50" height="50"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFs-M3-TOI">
+                                <rect key="frame" x="261" y="506" width="50" height="50"/>
+                                <connections>
+                                    <segue destination="Ihf-ud-5GP" kind="show" id="kAy-8B-OT7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -114,6 +109,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTo-X6-66W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1845" y="235"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="Vny-pb-zgR">
+            <objects>
+                <viewController id="Ihf-ud-5GP" customClass="FourthViewController" customModule="Cache_Grab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="erq-kv-5Q0"/>
+                        <viewControllerLayoutGuide type="bottom" id="01J-qm-Eln"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0qK-SL-I3Z">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="3UJ-Ly-pJf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="578"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to use Cache Grab" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUA-Db-9hX">
+                                <rect key="frame" x="0.0" y="74" width="320" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usericon1" translatesAutoresizingMaskIntoConstraints="NO" id="Mry-Rw-JBf">
+                                <rect key="frame" x="240" y="149" width="60" height="55"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usericon2" translatesAutoresizingMaskIntoConstraints="NO" id="IJz-Lv-gRh">
+                                <rect key="frame" x="240" y="205" width="60" height="55"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usericon3" translatesAutoresizingMaskIntoConstraints="NO" id="vTr-MP-ByD">
+                                <rect key="frame" x="240" y="261" width="60" height="56"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usericon4" translatesAutoresizingMaskIntoConstraints="NO" id="pn8-aF-ztc">
+                                <rect key="frame" x="240" y="316" width="60" height="56"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usericon5" translatesAutoresizingMaskIntoConstraints="NO" id="mFG-EW-lje">
+                                <rect key="frame" x="240" y="372" width="60" height="56"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usericon6" translatesAutoresizingMaskIntoConstraints="NO" id="5o9-8t-6d1">
+                                <rect key="frame" x="240" y="428" width="60" height="56"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="usericon7" translatesAutoresizingMaskIntoConstraints="NO" id="qlZ-HU-My1">
+                                <rect key="frame" x="239" y="484" width="61" height="56"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSv-1L-UEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2203" y="1033"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="OzM-5y-F4J">
@@ -131,11 +177,6 @@
                                 <rect key="frame" x="0.0" y="-7" width="482" height="774"/>
                                 <animations/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cxq-ga-qOY">
-                                <rect key="frame" x="26" y="163" width="265" height="312"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Caches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKK-rf-yqn">
                                 <rect key="frame" x="101" y="94" width="115" height="44"/>
                                 <animations/>
@@ -149,6 +190,11 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cxq-ga-qOY">
+                                <rect key="frame" x="26" y="163" width="265" height="312"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -181,9 +227,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Help" width="100" height="100"/>
         <image name="background1" width="1080" height="1980"/>
         <image name="button1" width="50" height="50"/>
         <image name="button2" width="50" height="50"/>
         <image name="finallogo1" width="540" height="540"/>
+        <image name="usericon1" width="60" height="60"/>
+        <image name="usericon2" width="60" height="60"/>
+        <image name="usericon3" width="60" height="60"/>
+        <image name="usericon4" width="60" height="60"/>
+        <image name="usericon5" width="60" height="60"/>
+        <image name="usericon6" width="60" height="60"/>
+        <image name="usericon7" width="60" height="60"/>
     </resources>
 </document>

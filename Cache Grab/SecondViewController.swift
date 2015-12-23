@@ -87,10 +87,34 @@ extension SecondViewController: MKMapViewDelegate {
 
 
 extension SecondViewController: CLLocationManagerDelegate {
-    
-    func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
         
-    }
+        
+        func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+            
+            let newLocation = locations.last
+            
+            if let newLocation = newLocation {
+                print(newLocation)
+            }
+            
+        }
+        
+        func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+            print("Entering \(region.identifier)")
+            
+            let refreshAlert = UIAlertController(title: "GeoCache Found", message: "You are in the vicinity of a Geocache", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            
+            refreshAlert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action: UIAlertAction!) in
+                
+                refreshAlert .dismissViewControllerAnimated(true, completion: nil)
+                
+                
+            }))
+            
+            presentViewController(refreshAlert, animated: true, completion: nil)
+        }
+    
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
         
@@ -102,5 +126,5 @@ extension SecondViewController: CLLocationManagerDelegate {
 
 class CustomPointAnnotation: MKAnnotationView {
     var imageName: String!
-}
+    }
 
