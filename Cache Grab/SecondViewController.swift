@@ -8,6 +8,8 @@ class SecondViewController: UIViewController {
     let locationManager = CLLocationManager()
     let bournemouthPier = CLLocationCoordinate2D(latitude: 50.716098, longitude: -1.875780)
     var userImage = "usericon4"
+    var showingAlert = false
+    var refreshAlert: UIAlertController?
     
 
     @IBOutlet weak var myMap: MKMapView!
@@ -16,7 +18,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         
         locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
         
         myMap.setUserTrackingMode(.Follow, animated: true)
         myMap.delegate = self
@@ -65,17 +67,17 @@ extension SecondViewController: MKMapViewDelegate {
         switch distance {
         case 0..<100:
             userImage = "usericon7"
-        case 100..<200:
+        case 100..<300:
             userImage = "usericon6"
-        case 200..<300:
+        case 300..<500:
             userImage = "usericon5"
-        case 300..<400:
+        case 500..<700:
             userImage = "usericon4"
-        case 400..<500:
+        case 700..<900:
             userImage = "usericon3"
-        case 500..<600:
+        case 900..<1100:
             userImage = "usericon2"
-        case 600..<700:
+        case 1100..<5000:
             userImage = "usericon1"
         default:
             userImage = "usericon3"
@@ -89,34 +91,41 @@ extension SecondViewController: MKMapViewDelegate {
 extension SecondViewController: CLLocationManagerDelegate {
         
         
-        func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-            
-            let newLocation = locations.last
-            
-            if let newLocation = newLocation {
-                print(newLocation)
-            }
-            
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let newLocation = locations.last
+        
+        if let newLocation = newLocation {
+            print(newLocation)
         }
         
-        func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
-            print("Entering \(region.identifier)")
+    }
+    
+    
+    func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        print("Entering \(region.identifier)")
+        
+        if !showingAlert {
+            showingAlert = true
+            refreshAlert = UIAlertController(title: "GeoCache Found", message: "You are in the vicinity of a Geocache", preferredStyle: UIAlertControllerStyle.Alert)
             
-            let refreshAlert = UIAlertController(title: "GeoCache Found", message: "You are in the vicinity of a Geocache", preferredStyle: UIAlertControllerStyle.Alert)
             
-            
-            refreshAlert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action: UIAlertAction!) in
-                
-                refreshAlert .dismissViewControllerAnimated(true, completion: nil)
-                
-                
+            refreshAlert!.addAction(UIAlertAction(title: "Grab Cache", style: .Default, handler: { _ in
+                self.performSegueWithIdentifier("geocache", sender: self)
             }))
             
-            presentViewController(refreshAlert, animated: true, completion: nil)
+            presentViewController(refreshAlert!, animated: true, completion: nil)
         }
+    }
     
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+        
+        if let refreshAlert = refreshAlert {
+            refreshAlert.dismissViewControllerAnimated(true, completion: { _ in
+                self.showingAlert = false
+            })
+        }
         
     }
     
