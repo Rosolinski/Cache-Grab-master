@@ -1,5 +1,3 @@
-//
-//  ViewController.swift
 //  Cache Grab
 //
 //  Created by Robin Osolinski on 23/11/2015.
