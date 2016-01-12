@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="sAQ-vZ-HWD">
@@ -183,7 +183,7 @@
                         <viewControllerLayoutGuide type="bottom" id="oLl-E6-d3W"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qW4-at-Us4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="9DQ-Gu-ptY">
@@ -538,7 +538,7 @@
         <image name="usericon7" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CLs-in-vop"/>
         <segue reference="XhP-gm-Elg"/>
+        <segue reference="oAf-nP-5lo"/>
     </inferredMetricsTieBreakers>
 </document>
