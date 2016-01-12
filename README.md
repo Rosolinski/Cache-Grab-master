@@ -1,6 +1,6 @@
 # Cache Grab
 
-Cache Grab is currently a functional prototype of a geocache tracking iOS app, consisting of the code and files featured in this repository. This readme will guide you through how to use this prototype. 
+Cache Grab is currently a functional prototype of a geocache tracking iOS app, consisting of the code and files featured in this repository. This readme will guide you through how to use this prototype. The geocache is hidden on a GPS map and the user has to navigate the map to find it. The user will be able to know if they are getting closer or further away from the geocache, depending on the colour of their user icon. The icon turns red if they are getting closer, and if the icon turns blue, it means they aregetting further away from the geocache. 
 
 This app is intended to run on iPhone 5.
 
@@ -31,6 +31,8 @@ I used switch code to change the colour of icon. For example:
             userImage = "usericon5"
 
 This code allows the user icon to be replaced by a different icon every 100-200 metres the user is away from the geocache. When the user is within 100 metres of the geocache, their icon should change to "usericon7" and they will receive a notification that will take them to the FifthViewController.
+
+Note: if for some reason, the icon isn't moving by itself, be sure to set the simulated location to "location".
 
 ### ThirdViewController - Caches screen
 
