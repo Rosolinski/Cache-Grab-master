@@ -8,6 +8,8 @@ import UIKit
 import MapKit
 import Foundation
 
+    //Make sure to set the app to run on iPhone 5 and the simulation is set to "Location" if it's not already set.
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {

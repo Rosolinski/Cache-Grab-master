@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="sAQ-vZ-HWD">
@@ -201,12 +201,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CacheImg3" translatesAutoresizingMaskIntoConstraints="NO" id="LzV-VS-lqx">
                                 <rect key="frame" x="220" y="217" width="76" height="100"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click images to view full-size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSj-QA-rfP">
-                                <rect key="frame" x="50" y="182" width="221" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="button1" translatesAutoresizingMaskIntoConstraints="NO" id="ecL-Xm-kvV">
                                 <rect key="frame" x="99" y="520.5" width="122" height="32.5"/>
                             </imageView>
@@ -267,6 +261,12 @@
                                     <segue destination="Lfd-IV-MIP" kind="show" animates="NO" id="o5O-3y-jlJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap images to view full-size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSj-QA-rfP">
+                                <rect key="frame" x="54" y="182" width="212" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -539,6 +539,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XhP-gm-Elg"/>
-        <segue reference="oAf-nP-5lo"/>
+        <segue reference="Cov-7c-pKx"/>
     </inferredMetricsTieBreakers>
 </document>

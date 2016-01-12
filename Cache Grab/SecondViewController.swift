@@ -12,6 +12,7 @@ class SecondViewController: UIViewController {
     var showingAlert = false
     var refreshAlert: UIAlertController?
     
+    //Make sure to set the app to run on iPhone 5 and the simulation is set to "Location" if it's not already set.
 
     @IBOutlet weak var myMap: MKMapView!
     
