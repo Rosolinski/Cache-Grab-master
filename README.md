@@ -1,6 +1,6 @@
-# Cache-Grab
+# Cache Grab
 
-Cache Grab is currently a functional prototype of a geocache tracking iOS app, comprising of the code and files featured in this repository. This readme will guide you through how to use this prototype. 
+Cache Grab is currently a functional prototype of a geocache tracking iOS app, consisting of the code and files featured in this repository. This readme will guide you through how to use this prototype. 
 
 This app is intended to run on iPhone 5.
 
@@ -12,7 +12,7 @@ This screen introduces the user to Cache Grab after they see a splash screen wit
 
 This is the ViewController that required the most code, as it was one of the most important screens for the project. Without the MapView, Cache Grab wouldn’t be successful as a geocache tracking app.
 
-Initially, the hand icon representing the user would change colour automatically, depending on their distance from the geocache. This however, wasn’t completely realised as in the end, I wasn’t able to get the icon to change automatically. The user can change the colour of the icon by moving to somewhere on the map, pressing the “back” button on the top left and then press “start searching” again. This refreshes the map and the colour of the user icon, so the code works to a degree.
+Initially, the hand icon representing the user would change colour automatically, depending on their distance from the geocache. This however, wasn’t completely realised as in the end, I wasn’t able to get the icon to change automatically. The user can change the colour of the icon by moving to somewhere on the map, pressing the “back” button on the top left and then press “start searching” again. This refreshes the map and changes the colour of the user icon accordingly, so the code is functional to a degree.
 
 I used switch code to change the colour of icon. For example:
 
@@ -30,7 +30,7 @@ I used switch code to change the colour of icon. For example:
         
             userImage = "usericon5"
 
-This code allows the user icon to be replaced by a different icon every 100-200 metres the user is away from the geocache. When the user is within 100 metres of the geocache, they will receive a notification that will take them to the FifthViewController.
+This code allows the user icon to be replaced by a different icon every 100-200 metres the user is away from the geocache. When the user is within 100 metres of the geocache, their icon should change to "usericon7" and they will receive a notification that will take them to the FifthViewController.
 
 ### ThirdViewController - Caches screen
 
@@ -49,9 +49,9 @@ This screen appears once the user has located the geocache and has tapped the �
 
 ### SixthViewController - Geocached media
 
-This ViewController was also important to my app as the main point of using Cache Grab and navigating the map is to access this media.  This media is interactive, as the user can tap on the three featured images to view them full-size. There is also a story posted under the images by the geocache author. The user can scroll through this story to read it. After the user has finished interacting with the geocache contents, they can tap the “Back to menu” button to return to the first ViewController.
+This ViewController was also important to my app as the main point of using Cache Grab and navigating the map is to access this media.  This media is interactive, as the user can tap on the three featured images to view them full-size. There is also a story by the geocache author posted under the images. The user can scroll through this story to read it. After the user has finished interacting with the geocache contents, they can tap the “Back to menu” button to return to the first ViewController.
 
 ### SeventhViewController, EighthViewController & NinthViewController - Fullscreen images
 
-These View Controllers have been used to fully display the images featured on the SixthViewController. Tapping on the images sends the user back to the previous ViewController.
+These View Controllers have been used to fully display the images featured on the SixthViewController. Tapping on the fullscreen images sends the user back to the previous ViewController.
 
